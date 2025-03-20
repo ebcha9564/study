@@ -30,6 +30,28 @@ img{
     width: 100%;
 }
 
+.content-textTitle{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content-textTitle>h2{
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-center{
+    width: 250px !important;
+    padding: 0 15px;
+}
+
 @media(max-width: 1773px){
     nav{
         width: 100%;

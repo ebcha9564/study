@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <!-- slider -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
+
 <body>
     <nav class="d-flex">
         <div class="logo">
@@ -24,14 +35,14 @@
         <div class="icon">
             <ul class="d-flex">
                 <li class="exist"><a href="#">
-                    <img src="images/icon--search.svg" alt="search-icon" height="30px" width="30px">
-                </a></li>
+                        <img src="images/icon--search.svg" alt="search-icon" height="30px" width="30px">
+                    </a></li>
                 <li class="exist"><a href="#">
-                    <img src="images/icon--bag.svg" alt="bag-icon" height="30px" width="30px">
-                </a></li>
+                        <img src="images/icon--bag.svg" alt="bag-icon" height="30px" width="30px">
+                    </a></li>
                 <li class="none"><a href="#">
-                    <img src="images/pajamas_hamburger.svg" alt="burger-icon" height="30px" width="30px">
-                </a></li>
+                        <img src="images/pajamas_hamburger.svg" alt="burger-icon" height="30px" width="30px">
+                    </a></li>
             </ul>
         </div>
     </nav>
@@ -39,5 +50,76 @@
     <section class="slider">
         <img src="images/background.png" alt="background">
     </section>
+
+    <section class="content-slide">
+        <div class="content-textTitle">
+            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deleniti atque minima dicta quaerat
+                quisquam neque cumque adipisci, </p>
+        </div>
+        <div class="slider">
+            <div class="center">
+                <div class="slide-center">
+                    <img src="images/slide2.jpg" alt="">
+                </div>
+                <div class="slide-center">
+                    <img src="images/slide3.jpg" alt="">
+                </div>
+                <div class="slide-center">
+                    <img src="images/slide4.jpg" alt="">
+                </div>
+                <div class="slide-center">
+                    <img src="images/slide5.jpg" alt="">
+                </div>
+                <div class="slide-center">
+                    <img src="images/slide6.jpg" alt="">
+                </div>
+                <div class="slide-center">
+                    <img src="images/slide7.jpg" alt="">
+                </div>
+                <div class="slide-center">
+                    <img src="images/slide2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 6,
+            slidesPerView: 3,
+            loop: true,
+            spaceBetween: 30,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
 </body>
+
 </html>
