@@ -52,10 +52,31 @@ img{
     padding: 0 15px;
 }
 
+.d-flex{
+    display: flex;
+}
+
+.gap{
+    gap: 0 15px;
+}
+
+.w-1316{
+    width: 1316px;
+    margin: 0 auto;
+}
+
+.column-4{
+    width: 30%;
+}
+
 @media(max-width: 1773px){
     nav{
         width: 100%;
         padding: 26px 20px;
+    }
+    .w-1316{
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -91,6 +112,17 @@ img{
 }
 
 @media (max-width: 768px){
+    .f-d-c{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .gap{
+        gap: 10px 0;
+    }
+    .column-4{
+        width: 100%;
+    }
     .icon{
         display: block;
     }
