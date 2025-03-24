@@ -26,10 +26,6 @@ nav{
     display: none;
 }
 
-img{
-    width: 100%;
-}
-
 .content-textTitle{
     width: 100%;
     text-align: center;
@@ -109,26 +105,48 @@ img{
     .navi a{
         gap: 30px;
     }
+
+    .row{
+        width: 1280px;
+    }
+
+
 }
 
 @media (max-width: 768px){
     .f-d-c{
         flex-direction: column;
-        padding: 0 10px;
     }
 
+    .text-section>p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .text-section>h2{
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
     .gap{
         gap: 10px 0;
     }
-    .column-4{
-        width: 100%;
-    }
+
     .icon{
         display: block;
     }
     .navi{
         display: none;
     }
+
+    .column-4{
+        text-align: center;
+    }
+
+
 
     .exist{
         display: none;

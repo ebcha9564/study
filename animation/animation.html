@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100px;
+            height: 50px;
+            background-color: #000;
+            color: #fff;
+            animation-name: playStop;
+            -moz-animation-name: playStop;
+            -webkit-animation-name: playStop;
+            -o-animation-name: playStop;
+            /* animation-delay: 3s; */
+            animation-timing-function: ease-in;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            /* animation-direction: normal; */
+            position: relative;
+        }
+        @keyframes playStop{
+            from{
+                left: 0;
+            }
+            50%{
+                left: 300px;
+            }
+            to{
+                left: 0;
+            }
+        }
+
+        @-moz-keyframes playStop{
+            from{
+                left: 0;
+            }
+            50%{
+                left: 300px;
+            }
+            to{
+                left: 0;
+            }
+        }
+
+        @-webkit-keyframes playStop{
+            from{
+                left: 0;
+            }
+            50%{
+                left: 300px;
+            }
+            to{
+                left: 0;
+            }
+        }
+
+        @-o-keyframes playStop{
+            from{
+                left: 0;
+            }
+            50%{
+                left: 300px;
+            }
+            to{
+                left: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <div class="btn-content">
+            <button class="play">Play</button>
+            <button class="stop">Stop</button>
+        </div>
+        <div class="ani-content">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.play').click(function(){
+                $('.box').css('background', 'black').css('animation-play-state', 'running');
+            });
+            $('.stop').click(function(){
+                $('.box').css('background', 'yellow').css('animation-play-state', 'paused');
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- I am planning to design and develop Korean Hanok based hotel website targeting the foreign tourists. 
+ I guess I need ur help for planning, desigining, and developing for each stage. Please summarize and brainstorm all the stages
+ Alright let me clarify the first stage of planning and research. We are aiming for designing and developing Hanok hotel website targeting foreign tourist. 
+ We hope that all the users can easily experience the Korean traditional cultures. 
+ Please create and brainstorm the site map and user flow Can you also benchmark other hotel website having similar concept?
+ Create wireframe or low-fidelity for each page you created
+
+  -->
