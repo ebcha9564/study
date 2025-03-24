@@ -151,7 +151,29 @@
             // ||=
 
 
+        /* 발표 자료
+        위에 해당하는 연산자들은 모두: bitwise operator
+        binary number: 모든 숫자는 0과 1로 구분되어 있음
+        예) 숫자 20은 (2^4 + 1) + (2^2 + 1) = 20
+        --> 이걸 binary number로 환산하면 10100
+        -100을 binary number로 환산하면 11111111 11111111 11111111 01100100
+        앞에 있는 12개의 1은 그냥 negative number라서
+        (2^0 + 0) + (2^1 + 0) + (2^2 + 1) + (2^3 + 1) + (2^4 + 1) + (2^5 + 1) + (2^6 + 1) + (2^7 + 0) = 100
+        >>>= 를 썻을떄 각 숫자 (bit)들이 오른쪽으로 shift 됌
+        >>>=: Shifts right by pushing zeros in from the left, and let the rightmost bits fall off 
+            & = and -> 0 & 0 = 0
+        1 & 0 = 0
+        0 & 1 = 0
+        1 & 1 = 1
+
+        || = or -> 0 || 0 = 0
+               1 || 0 = 1
+               0 || 1 = 1
+               1 || 1 - 1
+        */
     </script>
+
+    
 </body>
 </html>
 
